@@ -1,11 +1,46 @@
+/* общие */
+
 body{
     font-family: 'inter';
+}
+
+h2{
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 80px;
+    color:#BDAE82;
+    margin:0;
+    text-align: center;
+    padding: 100px 0 60px 0;
+    position: relative;
+}
+
+h2:after{
+    position: absolute;
+    width: 274px;
+    content:'';
+    border-top: 2px solid #BDAE82;
+    top: 139px;
+    right: 370px;
+
+}
+
+h2:before{
+    position: absolute;
+    width: 274px;
+    content:'';
+    border-top: 2px solid #BDAE82;
+    top: 139px;
+    left: 370px;
 }
 
 .wrapper{
     max-width: 1440px;
     margin: 0 auto;
 }
+
+/* header */
 
 header{
     background-image: url(image/background/bg.jpg);
@@ -61,6 +96,8 @@ li{
     color:#BDAE82;
 }   
 
+/* секция Hero внутри header  */
+
 header section{
     margin: 160px 0 10px 80px;
     width: 470px;
@@ -68,6 +105,7 @@ header section{
 
 h1{
     font-family: Merriweather;
+    font-weight:700;
     font-size: 60px;
     line-height: 120px; 
     color:white;
@@ -89,4 +127,38 @@ header button{
     font-size: 20px;
     line-height: 40px;
     text-align: center;
+}
+
+/* секция Skills */
+
+.second_section{
+    min-height: 482px;
+    background: black;
+}
+
+.container{
+    justify-content: space-between;
+    display: flex;
+    margin: 0 20px;
+}
+
+.skill_item{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex: 0 0 320px;
+}
+
+.bold{
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 0 20px 0;
+    margin:0;
+}
+
+.regular{
+    font-size: 18px;
+    line-height: 36px;  
+    text-align: center;
+    margin: 0 0 10px 0;
 }
