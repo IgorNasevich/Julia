@@ -27,7 +27,7 @@ h3{
     font-size: 28px;
     line-height: 56px;
     color: white;
-    margin:0;
+    margin: 0;
     padding: 43px 0 20px 0;
 }
 
@@ -172,6 +172,7 @@ section p{
     font-size: 18px;
     line-height: 36px;  
     text-align: center;
+    padding: 0 20px;
     margin: 0 0 10px 0;
 }
 
@@ -266,7 +267,16 @@ section p{
     font-weight: 400;
 }
 
-#Price_button{
+.Price_button{
+    box-sizing: border-box;
+    height: 55px;
+    width: 220px;
+    background: #BDAE82; 
+    color: black;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0;
     margin: 40px 0 43px 0; 
 }
 
@@ -297,7 +307,7 @@ section p{
 }
 
 .input_description{
-    background: none;
+    background: rgba(0, 0, 0, 0.5);
     border: 2px solid #BDAE82;
     width: 446px;
     height: 46px;
@@ -309,6 +319,7 @@ section p{
 }
 
 input::placeholder, textarea::placeholder{
+    background: none;
     font-family: Inter;
     font-size: 20px;
     line-height: 40px;
@@ -317,8 +328,9 @@ input::placeholder, textarea::placeholder{
 }
 
 #message{
+    background: rgba(0, 0, 0, 0.5);
     font-family: Inter;
-    background: none;
+    resize: none;
     border: 2px solid #BDAE82;
     color: #BDAE82;
     margin-bottom: 30px;
@@ -333,7 +345,7 @@ input::placeholder, textarea::placeholder{
 
 .footer_list{
     min-height: 150px;
-    padding: 0;
+    padding:0;
     margin: 0 20px;
     font-size: 20px;
     line-height: 50px;
@@ -347,13 +359,18 @@ input::placeholder, textarea::placeholder{
     padding-right:20px;
 }
 
-.social li:last-child{
+.social img:last-child{
     padding:0;
+}
+
+.social{
+    display: flex;
+    align-items: center;
 }
 
 /* анимации button */
 
-button.button:hover{
+button.button:hover, button.Price_button:hover{
     box-sizing: border-box;
     background:black ; 
     color: #BDAE82;
