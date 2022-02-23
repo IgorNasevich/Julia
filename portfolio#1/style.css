@@ -1,10 +1,37 @@
 /* общие */
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'inter';
 }
 
-h2{
+.button{
+    box-sizing: border-box;
+    height: 55px;
+    width: 220px;
+    background: #BDAE82; 
+    color: black;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+}
+
+h3{
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 56px;
+    color: white;
+    margin:0;
+    padding: 43px 0 20px 0;
+}
+
+.section_title{
     font-family: Merriweather;
     font-weight: bold;
     font-size: 40px;
@@ -16,17 +43,16 @@ h2{
     position: relative;
 }
 
-h2:after{
+.section_title:after{
     position: absolute;
     width: 274px;
     content:'';
     border-top: 2px solid #BDAE82;
     top: 139px;
     right: 370px;
-
 }
 
-h2:before{
+.section_title:before{
     position: absolute;
     width: 274px;
     content:'';
@@ -38,6 +64,7 @@ h2:before{
 .wrapper{
     max-width: 1440px;
     margin: 0 auto;
+    background: black;
 }
 
 /* header */
@@ -119,22 +146,7 @@ section p{
     margin: 0 0 25px 0;
 }  
 
-header button{
-    height: 55px;
-    width: 220px;
-    background: #BDAE82; 
-    color:black;
-    font-size: 20px;
-    line-height: 40px;
-    text-align: center;
-}
-
 /* секция Skills */
-
-.second_section{
-    min-height: 482px;
-    background: black;
-}
 
 .container{
     justify-content: space-between;
@@ -161,4 +173,192 @@ header button{
     line-height: 36px;  
     text-align: center;
     margin: 0 0 10px 0;
+}
+
+/* 3-ая секция */
+
+.third_section h2:before{
+    width: 240px;
+    top: 139px;
+    left: 370px;
+}
+
+.third_section h2:after{
+    width: 240px;
+    top: 139px;
+    right: 370px;
+}
+
+.four_buttons{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.four_buttons:last-child{
+    margin:0;
+}
+
+.six_photos{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.six_photos :nth-child(-n+3) {
+    padding-bottom: 25px;
+}
+
+/* 4-ая секция */
+ 
+.fourth_section{
+    position: relative;
+}
+
+.fourth_section img{
+    display: block;
+    margin: 0 auto;
+}
+
+.player_icon{
+    position: absolute;
+    left: 656px;
+    bottom: 287px;
+    height: 133px;
+    width: 133px;
+    color: black;
+    background: none;
+    padding: 0;
+    margin: 0;
+    background-image:url(icons/Play_hover.svg)
+}
+
+/* 5-ая секция */
+
+.for_three_blocks{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 100px 20px;
+}
+
+.licence_type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 450px;
+    border: 3px solid #BDAE82;
+}
+
+.cost{
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 48px;
+    color: #BDAE82;
+    margin-bottom: 20px;
+}
+
+.description{
+    margin: 0;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+#Price_button{
+    margin: 40px 0 43px 0; 
+}
+
+/* 6-ая секция */
+
+.sixth_section{
+    position: relative;
+    min-height: 700px;
+    background-image: url(image/background/contacts.jpg);
+}
+
+.contact_me{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 450px;
+    height: 445px;
+}
+
+.contact_me h2{
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 80px;
+    color: #BDAE82;
+    margin:0;
+    padding-bottom: 40px;
+}
+
+.input_description{
+    background: none;
+    border: 2px solid #BDAE82;
+    width: 446px;
+    height: 46px;
+    padding:0;
+    font-size: 20px;
+    line-height: 40px;
+    color: #BDAE82;
+    margin-bottom:20px;
+}
+
+input::placeholder, textarea::placeholder{
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 40px;
+    color: #BDAE82;
+    padding-left: 20px;
+}
+
+#message{
+    font-family: Inter;
+    background: none;
+    border: 2px solid #BDAE82;
+    color: #BDAE82;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 40px;
+    width: 446px;
+    height: 100px;
+    padding:0;
+}
+
+/* footer */
+
+.footer_list{
+    min-height: 150px;
+    padding: 0;
+    margin: 0 20px;
+    font-size: 20px;
+    line-height: 50px;
+    display: flex;
+    color:white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_text{
+    padding-right:20px;
+}
+
+.social li:last-child{
+    padding:0;
+}
+
+/* анимации button */
+
+button.button:hover{
+    box-sizing: border-box;
+    background:black ; 
+    color: #BDAE82;
+    border: solid 2px #BDAE82;
+    height: 55px;
+    width: 220px;
+    transition: 0.3s ease;
 }
