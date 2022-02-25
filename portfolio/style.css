@@ -21,7 +21,7 @@ body{
     margin-right: 5px;
 }
 
-h3{
+.fifth_section h3{
     font-family: Merriweather;
     font-weight: bold;
     font-size: 28px;
@@ -139,7 +139,7 @@ h1{
     margin: 0 0 10px 0;
 }
 
-section p{
+section p, section article{
     font-size: 20px;
     line-height: 40px;
     color:white;
@@ -161,11 +161,13 @@ section p{
    flex: 0 0 320px;
 }
 
-.bold{
-    font-weight: bold;
+.second_section h3{
     text-align: center;
     padding: 50px 0 20px 0;
-    margin:0;
+    font-size: 20px;
+    line-height: 40px;
+    color:white;
+    margin: 0;
 }
 
 .regular{
@@ -193,24 +195,36 @@ section p{
 .four_buttons{
     display:flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
     padding-bottom: 60px;
+
 }
 
-.four_buttons:last-child{
+.four_buttons li:last-child .button{
     margin:0;
 }
 
 .six_photos{
     display:flex;
     flex-wrap: wrap;
+    margin: 0;
     padding: 0 20px;
     justify-content: space-between;
 }
 
-.six_photos :nth-child(-n+3) {
-    padding-bottom: 25px;
+.six_photos li:nth-child(-n+3){
+    margin-bottom: 25px;
 }
 
+img{
+    margin:0;
+    padding:0;
+}
+
+.six_photos li{
+    max-height: 560px;
+}
 /* 4-ая секция */
  
 .fourth_section{
@@ -247,8 +261,9 @@ section p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 0 0 450px;
+    flex: 0 0 444px;
     border: 3px solid #BDAE82;
+    max-height: 499px;
 }
 
 .cost{
@@ -283,27 +298,27 @@ section p{
 /* 6-ая секция */
 
 .sixth_section{
-    position: relative;
     min-height: 700px;
     background-image: url(image/background/contacts.jpg);
 }
 
-.contact_me{
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    width: 450px;
-    height: 445px;
+.sixth_section input{
+    margin: 0 0 20px 970px;
 }
 
-.contact_me h2{
+.sixth_section textarea, .sixth_section button{
+    margin: 0 0 30px 970px;
+}
+
+
+.sixth_section h2{
     font-family: Merriweather;
     font-weight: bold;
     font-size: 40px;
     line-height: 80px;
     color: #BDAE82;
-    margin:0;
-    padding-bottom: 40px;
+    margin:0px 0 40px 970px;
+    padding-top: 60px;
 }
 
 .input_description{
@@ -337,7 +352,7 @@ input::placeholder, textarea::placeholder{
     font-size: 20px;
     line-height: 40px;
     width: 446px;
-    height: 100px;
+    height: 96px;
     padding:0;
 }
 
@@ -355,17 +370,22 @@ input::placeholder, textarea::placeholder{
     align-items: center;
 }
 
-.footer_text{
-    padding-right:20px;
+.social ul{
+    display:flex;
+    padding:0;
+    align-items:center;
 }
 
-.social img:last-child{
+.social li:last-child img{
     padding:0;
 }
 
-.social{
-    display: flex;
-    align-items: center;
+.social li img, .git span, .git a{
+    padding-right:20px;
+}
+
+.social li img{
+    display: block;
 }
 
 /* анимации button */
