@@ -13,8 +13,8 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
-            <div>
+        <div>
+            <header>
                 <img class="logo" src="icons/header_logo.svg" alt="camera image">
                 <nav>
                     <ul>
@@ -23,11 +23,15 @@
                         <li><a href="#video">Video</a></li>
                         <li><a href="#price">Price</a></li>
                         <li><a href="#contacts">Contacts</a></li>
-                        <li class="switch_lng"><span>en </span> / ru</li>
+                        <li class="switch_lng">
+                            <button>
+                                <span>en </span> / ru
+                            </button>
+                        </li>
                     </ul>
                 </nav>
-            </div>
-            <section class="first_section">
+            </header>
+            <section>
                 <h1>
                     Alexa Rise
                 </h1>
@@ -38,52 +42,52 @@
                     Hire me
                 </button>
             </section>
-        </header>
+        </div>
         <main>
-            <section class="second_section" id="skills">
+            <section class="skills_section" id="skills">
                 <h2 class="section_title">
                     Skills
                 </h2>
                 <div class="container" >
-                    <div class="skill_item">
+                    <article class="skill_item">
                         <img src="icons/camera_skill1.svg" alt="camera icon">
                         <h3>
-                            <b>Digital photography</b>
+                            Digital photography
                         </h3>
-                        <article class="regular">
+                        <p class="regular">
                             High-quality photos in the studio and on the nature
-                        </article>
-                    </div>
-                    <div class="skill_item">
+                        </p>
+                    </article>
+                    <article class="skill_item">
                         <img src="icons/video_skill.svg" alt="camera icon">
                         <h3>
-                            <b>Video shooting</b>
+                            Video shooting
                         </h3>
-                        <article class="regular">
+                        <p class="regular">
                             Capture your moments so that they always stay with you
-                        </article>
-                    </div>
-                    <div class="skill_item">
+                        </p>
+                    </article>
+                    <article class="skill_item">
                         <img src="icons/image_skill.svg" alt="camera icon">
                         <h3>
-                            <b>Retouch</b>
+                            Retouch
                         </h3>
-                        <article class="regular">
+                        <p class="regular">
                             I strive to make photography surpass reality
-                        </article>
-                    </div>
-                    <div class="skill_item">
+                        </p>
+                    </article>
+                    <article class="skill_item">
                         <img src="icons/mic_skill.svg" alt="camera icon">
                         <h3>
-                            <b>Audio</b>
+                            Audio
                         </h3>
-                        <article class="regular">
+                        <p class="regular">
                             Professional sounds recording for video, advertising, portfolio
-                        </article>
-                    </div>
+                        </p>
+                    </article>
                 </div>
             </section>
-            <section class="third_section" id="portfolio">
+            <section class="portfolio_section" id="portfolio">
                 <h2 class="section_title">
                     Portfolio
                 </h2>
@@ -109,7 +113,7 @@
                         </button>
                     </li>
                 </ul>
-                <ul class="six_photos">
+                <ul class="gallery">
                     <li>
                         <img src="image/pics/portfolio-img.jpg" alt="picture_1">
                     </li>
@@ -130,17 +134,18 @@
                     </li>
                 </ul>
             </section>
-            <section class="fourth_section" id="video">
+            <section class="video_section" id="video">
                 <h2 class="section_title">
                     Video
                 </h2>
-                <img src="image/pics/video-player.jpg" alt="video_player">
-                <form>
-                    <button class="player_icon">
-                    </button>
-                </form>
+                <div>
+                    <form>
+                        <button class="player_icon">
+                        </button>
+                    </form>
+                </div>
             </section>
-            <section class="fifth_section" id="price">
+            <section class="price_section" id="price">
                 <h2 class="section_title">
                     Price
                 </h2>
@@ -231,7 +236,7 @@
                     </div>
                 </div>
             </section>
-            <section class="sixth_section" id="contacts">
+            <section class="contact_me_section" id="contacts">
                 <h2>
                     Contact me
                 </h2>
